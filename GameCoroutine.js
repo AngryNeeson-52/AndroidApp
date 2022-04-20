@@ -45,8 +45,8 @@ let result = 0
         {!running ?
           <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
               <Text style={{fontWeight: 'bold', color: 'black', fontSize: 30, alignItems: 'center'}}>
-                SCORE{"\n"}{getscore(result)}{"\n"}
-                BEST{"\n"}{result}
+                SCORE{"\n"}{result}{"\n"}
+                BEST{"\n"}{getscore(result)}
               </Text>
             <TouchableOpacity style={{backgroundColor: 'black', paddingHorizontal: 30, paddingVertical: 10}}
               onPress={() => {
