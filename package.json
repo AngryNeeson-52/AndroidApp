@@ -9,6 +9,10 @@
     "test": "jest",
     "lint": "eslint ."
   },
+  "engines": {
+    "node": "16.13.1",
+    "npm": "8.1.2"
+},
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.11",
     "@react-navigation/native": "^6.0.10",
