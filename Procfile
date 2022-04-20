@@ -1,1 +1,1 @@
-worker: App
+web: App
