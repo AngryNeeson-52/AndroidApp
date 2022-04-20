@@ -1,14 +1,16 @@
+
+import {
+  NavigationContainer,
+  getFocusedRouteNameFromRoute,
+} from '@react-navigation/native';
 import React from 'react';
-import Router from './src/Router';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import LoginPage from './screens/LoginPage';
+import SignupPage from './screens/SignupPage';
+import GameCoroutine from './GameCoroutine'
 
-class App extends React.Component {
-
-  render() {
-    return (
-      <Router />
-    );
-  }
-
+export default function App() {
+  return(
+    GameCoroutine()
+  )
 }
-
-export default App;

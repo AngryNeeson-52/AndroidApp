@@ -1,31 +1,7 @@
 import React, { Component } from 'react';
 import { TextInput, StyleSheet, View, Text, Alert, Button } from 'react-native';
-import { NavigationService } from '../common' ;
 
-export default class SignupPage extends Component {
-
-  constructor(props) {
-    super(props);
-  }
-
-  state = {
-    ID: '',
-    PW: '',
-    inputID: '',
-    inputPW: ''
-  }
-
-  IDcheckBtn = () =>{
-
-
-  }
-  PWcheckBtn = () =>{
-
-    
-  }
-
-
-  render() {
+export default function SignupPage() {
     return (
       <View style={styles.container}>
           <Text style={styles.header}> 회원가입 </Text>
@@ -51,7 +27,6 @@ export default class SignupPage extends Component {
           </View>
       </View>
     );
-  }
 }
 
 const styles = StyleSheet.create({
